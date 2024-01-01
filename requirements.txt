@@ -1,5 +1,5 @@
 pandas
-sklearn
+scikit-learn == 22.0.3
 streamlit
 joblib
 numpy
