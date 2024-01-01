@@ -81,8 +81,8 @@ st.write(df)
 
 with st.form(key='prediction_form'):
     if st.form_submit_button('Predict'):
-        loaded_model = load(r"C:\Users\V1V3K\Desktop\Project\Deployment\model.sav")
-        scaler = load(r"C:\Users\V1V3K\Desktop\Project\Deployment\scaler.sav")
+        loaded_model = load('model.sav')
+        scaler = load('scaler.sav')
 
         scaled_features = scaler.transform(df)
         prediction = loaded_model.predict(scaled_features)
